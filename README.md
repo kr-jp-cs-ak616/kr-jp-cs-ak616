@@ -1,4 +1,9 @@
-## Hi there 👋
+안녕하세요! 로보틱스 소프트웨어 엔지니어를 꿈꾸는 죽정창수입니다. 👋
+현재 대전미래융합교육원에서 로보틱스 전문가 과정을 이수하며, 자율주행과 시스템 제어를 깊이 있게 공부하고 있습니다.
+
+🛠 기술 스택 (Tech Stack)
+🚀 핵심 프로젝트 (Featured Projects)
+📍 [프로젝트 1] - 아두이노를 활용한 라인트레이서 로봇 구현
 
 <!--
 **kr-jp-cs-ak616/kr-jp-cs-ak616** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
