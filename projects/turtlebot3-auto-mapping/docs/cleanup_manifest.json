@@ -1,0 +1,551 @@
+{
+  "scope": "현재 Windows 작업 폴더만 정리. Ubuntu VM, Downloads, .git은 변경하지 않음",
+  "moves": {
+    "README_House_010_초기화실행.md": "docs/guides/README_House_010_초기화실행.md",
+    "README_House_Nav2_자동목표.md": "docs/guides/README_House_Nav2_자동목표.md",
+    "README_House_미탐색과위치추정.md": "docs/guides/README_House_미탐색과위치추정.md",
+    "README_TF2_시각고정_분석.md": "docs/history/README_TF2_시각고정_분석.md",
+    "README_House_바퀴기구학.md": "docs/history/README_House_바퀴기구학.md",
+    "README_House_SLAM_원인분리.md": "docs/history/README_House_SLAM_원인분리.md",
+    "house_state_report_2026-10-21.txt": "docs/evidence/house_state_report_2026-10-21.json",
+    "collect_house_state.py": "tools/diagnostics/collect_house_state.py",
+    "inspect_footprint_cost.py": "tools/diagnostics/inspect_footprint_cost.py",
+    "inspect_slam_rotation.py": "tools/diagnostics/inspect_slam_rotation.py"
+  },
+  "removed": [
+    {
+      "path": "__pycache__",
+      "directory": true,
+      "files": [
+        {
+          "path": "__pycache__\\house_gap_explorer.cpython-312.pyc",
+          "bytes": 34404,
+          "sha256": "d914a18e9b9358254a1e661a1adab372dc3b8c21c6710f8e47c3ed60359cf8f0"
+        },
+        {
+          "path": "__pycache__\\house_nav2_frontier.cpython-312.pyc",
+          "bytes": 55239,
+          "sha256": "433da9f75f432e3c08724607a1386eafae711c9df8564b90b471d2535bc44c60"
+        },
+        {
+          "path": "__pycache__\\house_room_survey.cpython-312.pyc",
+          "bytes": 15784,
+          "sha256": "f2dcae9496aa6848581857ec05c304b2dacaabdcfaccaf3a657e7b7b4262c0a1"
+        },
+        {
+          "path": "__pycache__\\house_waffle_pi_010.launch.cpython-312.pyc",
+          "bytes": 2511,
+          "sha256": "cc67c8e8175c0e2b82981a36698c27432e8b777b660597ebb39d241a26ca0c33"
+        },
+        {
+          "path": "__pycache__\\inspect_slam_rotation.cpython-312.pyc",
+          "bytes": 18621,
+          "sha256": "51cdbf37f38f03af341fabd7447c8b163ea90245eabdb73de335b314051d07d4"
+        },
+        {
+          "path": "__pycache__\\prepare_house_imu.cpython-312.pyc",
+          "bytes": 9008,
+          "sha256": "df6db80168494ed9f2af8ec7fdb16579d1fe12869e0fe7021f40414626afd750"
+        },
+        {
+          "path": "__pycache__\\prepare_house_nav2_frontier.cpython-312.pyc",
+          "bytes": 10068,
+          "sha256": "cd0f319efaf62b4b6ea4a4b776cf63ee0980df2e38dfe81124f2262ce7630bc8"
+        },
+        {
+          "path": "__pycache__\\prepare_house_revisit.cpython-312.pyc",
+          "bytes": 8279,
+          "sha256": "abb0aeb66b4584f229797ff512e948b3fe96268ea97250bd38ce26cf17b5d288"
+        },
+        {
+          "path": "__pycache__\\prepare_house_slam_ab.cpython-312.pyc",
+          "bytes": 6764,
+          "sha256": "f70d3a43260244a56efa33916f6be7d73edc5907303bcdd092255478cd102416"
+        },
+        {
+          "path": "__pycache__\\prepare_house_wheels_010.cpython-312.pyc",
+          "bytes": 8591,
+          "sha256": "f155b4eecdba0fe78dfb78d505acfd1428b43837a9806ae644d260ab0cbc837e"
+        },
+        {
+          "path": "__pycache__\\test_follow_diagnostics.cpython-312.pyc",
+          "bytes": 10556,
+          "sha256": "2d3641a113449410c088a06c1609623318e191f7cff12af0f28e56182f288a91"
+        },
+        {
+          "path": "__pycache__\\test_frontier_guide.cpython-312.pyc",
+          "bytes": 27505,
+          "sha256": "687e84f3b0a269ac996998aa373a17f88c473b5df56d0d40e388caca3600f074"
+        },
+        {
+          "path": "__pycache__\\test_house_gap_explorer.cpython-312.pyc",
+          "bytes": 15160,
+          "sha256": "dfd316b4dfdef520b882b63af82631c49fe496ae120e54589015543ba96179ad"
+        },
+        {
+          "path": "__pycache__\\test_house_imu.cpython-312.pyc",
+          "bytes": 4148,
+          "sha256": "170c25599de501579dd0b97346e39b923e3a1a047117d7c5ac2f7c7a0d8246cc"
+        },
+        {
+          "path": "__pycache__\\test_house_nav2_frontier.cpython-312.pyc",
+          "bytes": 28425,
+          "sha256": "454999f19c0c575537bc66866ad5a14698ddddcadb727ada65bc210b76fbb468"
+        },
+        {
+          "path": "__pycache__\\test_house_room_survey.cpython-312.pyc",
+          "bytes": 15332,
+          "sha256": "8cc773c2164e31066f9d4b67e02b7677f9ce087654c9d6acac4313115d24479f"
+        },
+        {
+          "path": "__pycache__\\test_house_slam_ab.cpython-312.pyc",
+          "bytes": 2557,
+          "sha256": "d666da5ccf2b46a7d967d6ee2663ec7d3d51d1f99b65f670914c7ed5db59e65a"
+        },
+        {
+          "path": "__pycache__\\test_house_wheels_010.cpython-312.pyc",
+          "bytes": 6214,
+          "sha256": "b05078dcd004594207d84516c20c56ad5d2b5eadc88220ccef37f23c302c44e6"
+        },
+        {
+          "path": "__pycache__\\test_start_observation.cpython-312.pyc",
+          "bytes": 11945,
+          "sha256": "7b75804b5b43796bcd86c943c251a834595d34585633bbbebf53e36dbe8c0a95"
+        },
+        {
+          "path": "__pycache__\\test_wall_follow_scan.cpython-312.pyc",
+          "bytes": 19854,
+          "sha256": "564e211b2e56633badef46bbcbddaaa425a8758e2d4cc549539383a40c8a8540"
+        },
+        {
+          "path": "__pycache__\\test_wall_recovery.cpython-312.pyc",
+          "bytes": 10395,
+          "sha256": "c7df6cc7e9441cfd13b8a19bd56bf4e9eface87aea85e76c06a9d34a147a3b1a"
+        },
+        {
+          "path": "__pycache__\\test_wheel_geometry.cpython-312.pyc",
+          "bytes": 8445,
+          "sha256": "1e9643a0a5b791cca60e28eb91af6d712da4544db663996415f6c76415e07fcb"
+        },
+        {
+          "path": "__pycache__\\wall_follow_scan.cpython-312.pyc",
+          "bytes": 113352,
+          "sha256": "69f069269dbe3aea5b13a87e32e17a0467a2273b159a33b7cbf4378f0b8bf6c1"
+        },
+        {
+          "path": "__pycache__\\wheel_geometry_audit.cpython-312.pyc",
+          "bytes": 26706,
+          "sha256": "f29eddfd864e53e5c0f3f8620b758090107a7544e4f152a5915d6f9743b22c2a"
+        }
+      ]
+    },
+    {
+      "path": "check_house_geometry.py",
+      "directory": false,
+      "files": [
+        {
+          "path": "check_house_geometry.py",
+          "bytes": 3705,
+          "sha256": "186868ca5bcf2150c8946810303e9b40c0de69a7ca38499d6b17025063b710e8"
+        }
+      ]
+    },
+    {
+      "path": "diagnose_house_tf.py",
+      "directory": false,
+      "files": [
+        {
+          "path": "diagnose_house_tf.py",
+          "bytes": 3777,
+          "sha256": "ab6ca2c707731e6cd5a46a186b21ec997efdcc6e0e7a4066f3b0029944722ea7"
+        }
+      ]
+    },
+    {
+      "path": "explore_map.py",
+      "directory": false,
+      "files": [
+        {
+          "path": "explore_map.py",
+          "bytes": 1027,
+          "sha256": "06236289f0e79571e3339297994e4e414a4662d305210980c2ff6d13d44d8e1d"
+        }
+      ]
+    },
+    {
+      "path": "fastdds_udp_only.xml",
+      "directory": false,
+      "files": [
+        {
+          "path": "fastdds_udp_only.xml",
+          "bytes": 585,
+          "sha256": "042a5565848ae488912d75ea42fdf0bc12ce1902bad9141cd70293281aa51378"
+        }
+      ]
+    },
+    {
+      "path": "house_env.bash",
+      "directory": false,
+      "files": [
+        {
+          "path": "house_env.bash",
+          "bytes": 645,
+          "sha256": "51a03b867627cdefa23b9227efa4034f31fc5c5df976cfe90f392a4701ec145f"
+        }
+      ]
+    },
+    {
+      "path": "house_gap_explorer.py",
+      "directory": false,
+      "files": [
+        {
+          "path": "house_gap_explorer.py",
+          "bytes": 20962,
+          "sha256": "641549b663caf795509afd57de098481baf41ade4d9ecf46e142968b38d108ba"
+        }
+      ]
+    },
+    {
+      "path": "house_gap_explorer_bundle",
+      "directory": true,
+      "files": [
+        {
+          "path": "house_gap_explorer_bundle\\house_gap_explorer.py",
+          "bytes": 15954,
+          "sha256": "2673f16b9cb5bf1e7b8190e869bbc044eb296f9612ca78a7a7ef83205c6f7968"
+        },
+        {
+          "path": "house_gap_explorer_bundle\\README_House_열린공간_문탐색.md",
+          "bytes": 7492,
+          "sha256": "a4bad6e15cd8e5796171523e78c3fe1cc1d6681c9bf01490f926f077472723bd"
+        },
+        {
+          "path": "house_gap_explorer_bundle\\wall_follow_scan.py",
+          "bytes": 71490,
+          "sha256": "95bde323454b4b5bc024e1e23bab7a6b3fd466bca9ccfdeef862d7be16786031"
+        }
+      ]
+    },
+    {
+      "path": "house_gap_explorer_bundle.zip",
+      "directory": false,
+      "files": [
+        {
+          "path": "house_gap_explorer_bundle.zip",
+          "bytes": 31808,
+          "sha256": "e4d91857db57302317798e313f6e659c6028e196fa7ad5a944ab8b340fab55b9"
+        }
+      ]
+    },
+    {
+      "path": "house_nav2_frontier_bundle.zip",
+      "directory": false,
+      "files": [
+        {
+          "path": "house_nav2_frontier_bundle.zip",
+          "bytes": 38179,
+          "sha256": "3900b29bb1cacfd14919b74f3369ccf7b31738344e9946f9191baee560e718a8"
+        }
+      ]
+    },
+    {
+      "path": "house_room_survey.py",
+      "directory": false,
+      "files": [
+        {
+          "path": "house_room_survey.py",
+          "bytes": 10801,
+          "sha256": "9f44812bd92a5267719500231e390874b95361ba61612c53e3cbca53687c44e6"
+        }
+      ]
+    },
+    {
+      "path": "house_wall_explorer.py",
+      "directory": false,
+      "files": [
+        {
+          "path": "house_wall_explorer.py",
+          "bytes": 16757,
+          "sha256": "d67a05b1a131c220c150153a156911322bf1cb5a2d8b603c07c6148b6d274ef4"
+        }
+      ]
+    },
+    {
+      "path": "prepare_house_base_frame.py",
+      "directory": false,
+      "files": [
+        {
+          "path": "prepare_house_base_frame.py",
+          "bytes": 1115,
+          "sha256": "0a39d02f3cfd9d7ab4b0b91d21d428d85d4c5fd21756c86bebe110282cb69e9d"
+        }
+      ]
+    },
+    {
+      "path": "prepare_house_imu.py",
+      "directory": false,
+      "files": [
+        {
+          "path": "prepare_house_imu.py",
+          "bytes": 5317,
+          "sha256": "bb3c622c7fbc47297451d8afc4841bf8826b86205ba7fd90a1b2491aac194df4"
+        }
+      ]
+    },
+    {
+      "path": "prepare_nav_config.py",
+      "directory": false,
+      "files": [
+        {
+          "path": "prepare_nav_config.py",
+          "bytes": 1485,
+          "sha256": "d29b9e8aa203f679c77e891e39284c22ce1ad7cf31ae60c2c79a736b71b5d9aa"
+        }
+      ]
+    },
+    {
+      "path": "README_House_Cyclone_시험.md",
+      "directory": false,
+      "files": [
+        {
+          "path": "README_House_Cyclone_시험.md",
+          "bytes": 3872,
+          "sha256": "dedf7158e57d6057fdb5b5a8dedaf6949ef8fdb34d2c551cb6102fe1b2f095ff"
+        }
+      ]
+    },
+    {
+      "path": "README_House_IMU_회전시험.md",
+      "directory": false,
+      "files": [
+        {
+          "path": "README_House_IMU_회전시험.md",
+          "bytes": 4969,
+          "sha256": "2c630883576c3c274668a192fb1b9cd941c5e644021d29d14a48b29ef529b350"
+        }
+      ]
+    },
+    {
+      "path": "README_House_라이다벽추종.md",
+      "directory": false,
+      "files": [
+        {
+          "path": "README_House_라이다벽추종.md",
+          "bytes": 9896,
+          "sha256": "2d6a6cbeedbd319fd75de66c30ecb4600e2d3a1fd8783f1cb7c036ef9de3ef7e"
+        }
+      ]
+    },
+    {
+      "path": "README_House_미탐색경계탐색.md",
+      "directory": false,
+      "files": [
+        {
+          "path": "README_House_미탐색경계탐색.md",
+          "bytes": 12279,
+          "sha256": "17cde585f7a584d1e700b5a39786fb3677cbe13e988028418a4ba16d231e96ff"
+        }
+      ]
+    },
+    {
+      "path": "README_House_벽재탐색.md",
+      "directory": false,
+      "files": [
+        {
+          "path": "README_House_벽재탐색.md",
+          "bytes": 4512,
+          "sha256": "ac603b7fdc793cb5fa69ff59fa6f6eca8b2c9c94e6ba02b53dfbfebc647e3ec6"
+        }
+      ]
+    },
+    {
+      "path": "README_House_벽주변탐색.md",
+      "directory": false,
+      "files": [
+        {
+          "path": "README_House_벽주변탐색.md",
+          "bytes": 10084,
+          "sha256": "c09711ba4f05da4d302ce5ca58b45441a605e72f8a19ffd88c4dc2b685bfeda3"
+        }
+      ]
+    },
+    {
+      "path": "README_House_열린공간_문탐색.md",
+      "directory": false,
+      "files": [
+        {
+          "path": "README_House_열린공간_문탐색.md",
+          "bytes": 9936,
+          "sha256": "f7d1935f69297dd9e01a47809e5d4ebd4d3d3d9cbd295f8ac099e3af9b8ab9de"
+        }
+      ]
+    },
+    {
+      "path": "README_House_윤곽시각.md",
+      "directory": false,
+      "files": [
+        {
+          "path": "README_House_윤곽시각.md",
+          "bytes": 2410,
+          "sha256": "8a20ee73dfa4cf65f867e06117314a75aabd9d5351e543163242b8b887cf5827"
+        }
+      ]
+    },
+    {
+      "path": "README_House_자동매핑.md",
+      "directory": false,
+      "files": [
+        {
+          "path": "README_House_자동매핑.md",
+          "bytes": 4482,
+          "sha256": "bdb51652f0a03cb9d02b3c83f9141c8351864e47afc3ca180bf3c72e2bcef8d6"
+        }
+      ]
+    },
+    {
+      "path": "README_House_처음부터_비교시험.md",
+      "directory": false,
+      "files": [
+        {
+          "path": "README_House_처음부터_비교시험.md",
+          "bytes": 4585,
+          "sha256": "56e30804936566d7e52820f675aaf2c7390bac8c1b6f6d48f2ad1ed76ddd24b9"
+        }
+      ]
+    },
+    {
+      "path": "README_House_통신재시작.md",
+      "directory": false,
+      "files": [
+        {
+          "path": "README_House_통신재시작.md",
+          "bytes": 3940,
+          "sha256": "9144e8a96646dce5cfa9bdc08995416558321d6fb9ab852501294d91cadac23c"
+        }
+      ]
+    },
+    {
+      "path": "README_House_회전맵왜곡.md",
+      "directory": false,
+      "files": [
+        {
+          "path": "README_House_회전맵왜곡.md",
+          "bytes": 3591,
+          "sha256": "18ca38980d0734d40bea2b7760967bc4cf0a914107a89bc073b3c889e79295b4"
+        }
+      ]
+    },
+    {
+      "path": "README_자동매핑.md",
+      "directory": false,
+      "files": [
+        {
+          "path": "README_자동매핑.md",
+          "bytes": 13668,
+          "sha256": "424c2af049c9976271abc2dc8b801cc861c446f7e8f0e1a4319b1e37df5fae2c"
+        }
+      ]
+    },
+    {
+      "path": "test_follow_diagnostics.py",
+      "directory": false,
+      "files": [
+        {
+          "path": "test_follow_diagnostics.py",
+          "bytes": 5170,
+          "sha256": "4af93db55b029e31f9e47c2ba0c7f160cb2239318b4837189efccbb0e40da9ef"
+        }
+      ]
+    },
+    {
+      "path": "test_frontier_guide.py",
+      "directory": false,
+      "files": [
+        {
+          "path": "test_frontier_guide.py",
+          "bytes": 13068,
+          "sha256": "4c2adddb915c9a59bf267596e8b23ee5ecf082d625b178b00e59b5991dfa6008"
+        }
+      ]
+    },
+    {
+      "path": "test_house_gap_explorer.py",
+      "directory": false,
+      "files": [
+        {
+          "path": "test_house_gap_explorer.py",
+          "bytes": 6571,
+          "sha256": "8314e844b402d86667525f95ddc3553035aff97c5c2666156fdf5760ac30e4ce"
+        }
+      ]
+    },
+    {
+      "path": "test_house_imu.py",
+      "directory": false,
+      "files": [
+        {
+          "path": "test_house_imu.py",
+          "bytes": 1912,
+          "sha256": "a16f9426d24fee53557d5069dfa72c3e919d0bbdd3e7e75c6cd64a49d13e9fa6"
+        }
+      ]
+    },
+    {
+      "path": "test_house_room_survey.py",
+      "directory": false,
+      "files": [
+        {
+          "path": "test_house_room_survey.py",
+          "bytes": 7817,
+          "sha256": "67d0758ab045b9cdf824afade5128aa43ef406e2661e693db68c439121c6884d"
+        }
+      ]
+    },
+    {
+      "path": "test_start_observation.py",
+      "directory": false,
+      "files": [
+        {
+          "path": "test_start_observation.py",
+          "bytes": 5729,
+          "sha256": "6aab1d4b194fe138f81a52bdd4634f3bf552566ca865d074dd85d182527f9f66"
+        }
+      ]
+    },
+    {
+      "path": "test_wall_follow_scan.py",
+      "directory": false,
+      "files": [
+        {
+          "path": "test_wall_follow_scan.py",
+          "bytes": 8968,
+          "sha256": "c8c16c9d70bed4a09249abb490c32a16f01beff4bb3e8f6e3673e087632b4dfb"
+        }
+      ]
+    },
+    {
+      "path": "test_wall_recovery.py",
+      "directory": false,
+      "files": [
+        {
+          "path": "test_wall_recovery.py",
+          "bytes": 4981,
+          "sha256": "c6ae2d3b4185c24b099be4fc3dd6d8de4283cb39dcdde765708d0868add8bf7c"
+        }
+      ]
+    },
+    {
+      "path": "wall_follow_scan.py",
+      "directory": false,
+      "files": [
+        {
+          "path": "wall_follow_scan.py",
+          "bytes": 72237,
+          "sha256": "b3028c9188deb6eaee8f301f2a052c0e6238ab8172ae71e2cece84c762bdd823"
+        }
+      ]
+    }
+  ],
+  "completed_at": "2026-10-22T16:38:08.3470432+09:00",
+  "deletion_method": "Windows 휴지통으로 이동, 영구 삭제하지 않음"
+}

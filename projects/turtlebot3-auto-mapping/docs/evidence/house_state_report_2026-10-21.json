@@ -1,0 +1,903 @@
+{
+  "note": "설정 변경 없이 관측. external_tf는 Nav2 내부 버퍼가 아니라 새 관측 노드의 버퍼.",
+  "environment": {
+    "ROS_DISTRO": "humble",
+    "RMW_IMPLEMENTATION": "rmw_cyclonedds_cpp",
+    "ROS_DOMAIN_ID": "30",
+    "ROS_LOCALHOST_ONLY": "0",
+    "FASTRTPS_DEFAULT_PROFILES_FILE": null,
+    "FASTDDS_DEFAULT_PROFILES_FILE": null,
+    "CYCLONEDDS_URI": null
+  },
+  "topic_samples": {
+    "/clock": {
+      "samples": 197,
+      "first_stamp": 1293.8,
+      "last_stamp": 1313.4,
+      "min_stamp": 1293.8,
+      "max_stamp": 1313.4,
+      "backward_steps": 0,
+      "distinct_stamps": 197,
+      "last_receive_wall": 5514.14908793
+    },
+    "/scan": {
+      "samples": 99,
+      "first_stamp": 1293.801,
+      "last_stamp": 1313.401,
+      "min_stamp": 1293.801,
+      "max_stamp": 1313.401,
+      "backward_steps": 0,
+      "distinct_stamps": 99,
+      "last_receive_wall": 5514.150503648
+    },
+    "/odom": {
+      "samples": 579,
+      "first_stamp": 1293.807,
+      "last_stamp": 1313.459,
+      "min_stamp": 1293.807,
+      "max_stamp": 1313.459,
+      "backward_steps": 0,
+      "distinct_stamps": 579,
+      "last_receive_wall": 5514.207937335
+    },
+    "/local_costmap/published_footprint": {
+      "samples": 100,
+      "first_stamp": 126.043,
+      "last_stamp": 126.043,
+      "min_stamp": 126.043,
+      "max_stamp": 126.043,
+      "backward_steps": 0,
+      "distinct_stamps": 1,
+      "last_receive_wall": 5514.085238607
+    },
+    "/local_costmap/costmap": {
+      "samples": 33,
+      "first_stamp": 1293.8,
+      "last_stamp": 1313.3,
+      "min_stamp": 1293.8,
+      "max_stamp": 1313.3,
+      "backward_steps": 0,
+      "distinct_stamps": 33,
+      "last_receive_wall": 5514.085697989
+    }
+  },
+  "tf_edges": {
+    "/tf_static | /base_footprint | /base_link": {
+      "samples": 1,
+      "first_stamp": 0.0,
+      "last_stamp": 0.0,
+      "min_stamp": 0.0,
+      "max_stamp": 0.0,
+      "backward_steps": 0,
+      "distinct_stamps": 1,
+      "last_receive_wall": 5494.214147208
+    },
+    "/tf_static | /base_link | /camera_link": {
+      "samples": 1,
+      "first_stamp": 0.0,
+      "last_stamp": 0.0,
+      "min_stamp": 0.0,
+      "max_stamp": 0.0,
+      "backward_steps": 0,
+      "distinct_stamps": 1,
+      "last_receive_wall": 5494.214152558
+    },
+    "/tf_static | /camera_link | /camera_rgb_frame": {
+      "samples": 1,
+      "first_stamp": 0.0,
+      "last_stamp": 0.0,
+      "min_stamp": 0.0,
+      "max_stamp": 0.0,
+      "backward_steps": 0,
+      "distinct_stamps": 1,
+      "last_receive_wall": 5494.214173357
+    },
+    "/tf_static | /camera_rgb_frame | /camera_rgb_optical_frame": {
+      "samples": 1,
+      "first_stamp": 0.0,
+      "last_stamp": 0.0,
+      "min_stamp": 0.0,
+      "max_stamp": 0.0,
+      "backward_steps": 0,
+      "distinct_stamps": 1,
+      "last_receive_wall": 5494.214175812
+    },
+    "/tf_static | /base_link | /caster_back_left_link": {
+      "samples": 1,
+      "first_stamp": 0.0,
+      "last_stamp": 0.0,
+      "min_stamp": 0.0,
+      "max_stamp": 0.0,
+      "backward_steps": 0,
+      "distinct_stamps": 1,
+      "last_receive_wall": 5494.214177385
+    },
+    "/tf_static | /base_link | /caster_back_right_link": {
+      "samples": 1,
+      "first_stamp": 0.0,
+      "last_stamp": 0.0,
+      "min_stamp": 0.0,
+      "max_stamp": 0.0,
+      "backward_steps": 0,
+      "distinct_stamps": 1,
+      "last_receive_wall": 5494.214187193
+    },
+    "/tf_static | /base_link | /imu_link": {
+      "samples": 1,
+      "first_stamp": 0.0,
+      "last_stamp": 0.0,
+      "min_stamp": 0.0,
+      "max_stamp": 0.0,
+      "backward_steps": 0,
+      "distinct_stamps": 1,
+      "last_receive_wall": 5494.214188886
+    },
+    "/tf_static | /base_link | /base_scan": {
+      "samples": 1,
+      "first_stamp": 0.0,
+      "last_stamp": 0.0,
+      "min_stamp": 0.0,
+      "max_stamp": 0.0,
+      "backward_steps": 0,
+      "distinct_stamps": 1,
+      "last_receive_wall": 5494.214190099
+    },
+    "/tf | map | odom": {
+      "samples": 292,
+      "first_stamp": 1293.8,
+      "last_stamp": 1313.401,
+      "min_stamp": 1293.8,
+      "max_stamp": 1313.401,
+      "backward_steps": 0,
+      "distinct_stamps": 292,
+      "last_receive_wall": 5514.174828372
+    },
+    "/tf | odom | base_footprint": {
+      "samples": 578,
+      "first_stamp": 1293.807,
+      "last_stamp": 1313.425,
+      "min_stamp": 1293.807,
+      "max_stamp": 1313.425,
+      "backward_steps": 0,
+      "distinct_stamps": 578,
+      "last_receive_wall": 5514.174315589
+    },
+    "/tf | /base_link | /wheel_left_link": {
+      "samples": 381,
+      "first_stamp": 1293.841,
+      "last_stamp": 1313.391,
+      "min_stamp": 1293.841,
+      "max_stamp": 1313.391,
+      "backward_steps": 0,
+      "distinct_stamps": 381,
+      "last_receive_wall": 5514.141784892
+    },
+    "/tf | /base_link | /wheel_right_link": {
+      "samples": 381,
+      "first_stamp": 1293.841,
+      "last_stamp": 1313.391,
+      "min_stamp": 1293.841,
+      "max_stamp": 1313.391,
+      "backward_steps": 0,
+      "distinct_stamps": 381,
+      "last_receive_wall": 5514.141787407
+    }
+  },
+  "tf_parents": {
+    "/base_link": [
+      "/base_footprint"
+    ],
+    "/camera_link": [
+      "/base_link"
+    ],
+    "/camera_rgb_frame": [
+      "/camera_link"
+    ],
+    "/camera_rgb_optical_frame": [
+      "/camera_rgb_frame"
+    ],
+    "/caster_back_left_link": [
+      "/base_link"
+    ],
+    "/caster_back_right_link": [
+      "/base_link"
+    ],
+    "/imu_link": [
+      "/base_link"
+    ],
+    "/base_scan": [
+      "/base_link"
+    ],
+    "odom": [
+      "map"
+    ],
+    "base_footprint": [
+      "odom"
+    ],
+    "/wheel_left_link": [
+      "/base_link"
+    ],
+    "/wheel_right_link": [
+      "/base_link"
+    ]
+  },
+  "external_tf": {
+    "odom <- base_footprint": [
+      {
+        "stamp": 1293.773,
+        "xyz": [
+          -1.9999827829409342,
+          -0.4999936868999609,
+          0.007920450924285085
+        ]
+      },
+      {
+        "stamp": 1294.759,
+        "xyz": [
+          -1.9999827886352193,
+          -0.4999936369149166,
+          0.007911208692643217
+        ]
+      },
+      {
+        "stamp": 1295.745,
+        "xyz": [
+          -1.9999829251454835,
+          -0.49999362305941286,
+          0.00791056882810392
+        ]
+      },
+      {
+        "stamp": 1296.731,
+        "xyz": [
+          -1.9999829662698088,
+          -0.49999361075724513,
+          0.007904675743336163
+        ]
+      },
+      {
+        "stamp": 1297.785,
+        "xyz": [
+          -1.9999829727098517,
+          -0.4999936916368405,
+          0.007895452981883329
+        ]
+      },
+      {
+        "stamp": 1298.737,
+        "xyz": [
+          -1.9999830564214591,
+          -0.4999935978595445,
+          0.00791790387529857
+        ]
+      },
+      {
+        "stamp": 1299.757,
+        "xyz": [
+          -1.9999829174732582,
+          -0.49999358470976146,
+          0.007913338475418565
+        ]
+      },
+      {
+        "stamp": 1300.709,
+        "xyz": [
+          -1.999983108363654,
+          -0.49999364432481247,
+          0.007911735928043336
+        ]
+      },
+      {
+        "stamp": 1301.695,
+        "xyz": [
+          -1.9999832400878046,
+          -0.49999360105613605,
+          0.00790415499665912
+        ]
+      },
+      {
+        "stamp": 1302.715,
+        "xyz": [
+          -1.9999832357114733,
+          -0.4999937191570397,
+          0.00790977031227794
+        ]
+      },
+      {
+        "stamp": 1303.667,
+        "xyz": [
+          -1.9999832633328172,
+          -0.4999935826322775,
+          0.00791842851105795
+        ]
+      },
+      {
+        "stamp": 1304.653,
+        "xyz": [
+          -1.9999831101603451,
+          -0.4999934996728341,
+          0.007888452884857969
+        ]
+      },
+      {
+        "stamp": 1305.673,
+        "xyz": [
+          -1.9999832971459344,
+          -0.499993698978213,
+          0.007895845582716651
+        ]
+      },
+      {
+        "stamp": 1306.625,
+        "xyz": [
+          -1.9999832918412181,
+          -0.49999365581691885,
+          0.007904102037418499
+        ]
+      },
+      {
+        "stamp": 1307.645,
+        "xyz": [
+          -1.999983380292074,
+          -0.4999935058277191,
+          0.007918114609831514
+        ]
+      },
+      {
+        "stamp": 1308.631,
+        "xyz": [
+          -1.999983502747302,
+          -0.49999354867956214,
+          0.007897442996117693
+        ]
+      },
+      {
+        "stamp": 1309.617,
+        "xyz": [
+          -1.9999832274919722,
+          -0.4999936595026962,
+          0.0079099386043026
+        ]
+      },
+      {
+        "stamp": 1310.603,
+        "xyz": [
+          -1.9999834191217452,
+          -0.499993636954748,
+          0.00791368850668978
+        ]
+      },
+      {
+        "stamp": 1311.623,
+        "xyz": [
+          -1.9999835977339109,
+          -0.4999935404702842,
+          0.007893894304895087
+        ]
+      },
+      {
+        "stamp": 1312.575,
+        "xyz": [
+          -1.9999835619444666,
+          -0.4999934666634664,
+          0.00790031003952028
+        ]
+      }
+    ],
+    "odom <- base_link": [
+      {
+        "error": "\"base_link\" passed to lookupTransform argument source_frame does not exist. "
+      },
+      {
+        "stamp": 1294.759,
+        "xyz": [
+          -1.999920727013311,
+          -0.4999935230003484,
+          0.01791101610789425
+        ]
+      },
+      {
+        "stamp": 1295.745,
+        "xyz": [
+          -1.99992096284406,
+          -0.49999350127694536,
+          0.017910376859179886
+        ]
+      },
+      {
+        "stamp": 1296.731,
+        "xyz": [
+          -1.9999210153826346,
+          -0.4999934793417467,
+          0.01790448384501033
+        ]
+      },
+      {
+        "stamp": 1297.785,
+        "xyz": [
+          -1.9999209914838838,
+          -0.4999936474114667,
+          0.01789526089632207
+        ]
+      },
+      {
+        "stamp": 1298.737,
+        "xyz": [
+          -1.9999211232127512,
+          -0.49999346353172924,
+          0.01791771208644018
+        ]
+      },
+      {
+        "stamp": 1299.757,
+        "xyz": [
+          -1.9999208106333952,
+          -0.4999934426006566,
+          0.017913145609571066
+        ]
+      },
+      {
+        "stamp": 1300.709,
+        "xyz": [
+          -1.9999211577944322,
+          -0.4999935659661553,
+          0.017911544032243785
+        ]
+      },
+      {
+        "stamp": 1301.695,
+        "xyz": [
+          -1.999921390998653,
+          -0.4999934834004146,
+          0.017903963728646357
+        ]
+      },
+      {
+        "stamp": 1302.715,
+        "xyz": [
+          -1.999921346879398,
+          -0.49999372216146837,
+          0.017909578799066843
+        ]
+      },
+      {
+        "stamp": 1303.667,
+        "xyz": [
+          -1.999921367261629,
+          -0.49999345517707844,
+          0.017918236952229542
+        ]
+      },
+      {
+        "stamp": 1304.653,
+        "xyz": [
+          -1.9999210270696264,
+          -0.49999329707626144,
+          0.017888260165441004
+        ]
+      },
+      {
+        "stamp": 1305.673,
+        "xyz": [
+          -1.9999213677363619,
+          -0.4999936979780202,
+          0.017895653818289423
+        ]
+      },
+      {
+        "stamp": 1306.625,
+        "xyz": [
+          -1.9999213240552722,
+          -0.49999361505861095,
+          0.01790391003516744
+        ]
+      },
+      {
+        "stamp": 1307.645,
+        "xyz": [
+          -1.9999214631282118,
+          -0.4999933206922429,
+          0.017917922919521462
+        ]
+      },
+      {
+        "stamp": 1308.631,
+        "xyz": [
+          -1.9999216732324334,
+          -0.499993412195902,
+          0.017897251848913998
+        ]
+      },
+      {
+        "stamp": 1309.617,
+        "xyz": [
+          -1.9999210914253396,
+          -0.4999936356298332,
+          0.017909745557871927
+        ]
+      },
+      {
+        "stamp": 1310.603,
+        "xyz": [
+          -1.9999214381013068,
+          -0.49999359626098716,
+          0.017913496422417435
+        ]
+      },
+      {
+        "stamp": 1311.623,
+        "xyz": [
+          -1.9999217633753725,
+          -0.49999340859721,
+          0.017893703127803334
+        ]
+      },
+      {
+        "stamp": 1312.575,
+        "xyz": [
+          -1.9999216543609675,
+          -0.49999326737009275,
+          0.017900118408253528
+        ]
+      }
+    ],
+    "map <- odom": [
+      {
+        "error": "\"map\" passed to lookupTransform argument target_frame does not exist. "
+      },
+      {
+        "stamp": 1294.7,
+        "xyz": [
+          2.018738475650409,
+          0.46273616965764003,
+          -0.07352234928547337
+        ]
+      },
+      {
+        "stamp": 1295.7,
+        "xyz": [
+          2.0175691928168598,
+          0.4625097725598848,
+          -0.07351933322066985
+        ]
+      },
+      {
+        "stamp": 1296.7,
+        "xyz": [
+          2.0192083618610557,
+          0.4634479220760828,
+          -0.07352392102301795
+        ]
+      },
+      {
+        "stamp": 1297.7,
+        "xyz": [
+          2.0183913793767663,
+          0.46248074774413983,
+          -0.07351131207005392
+        ]
+      },
+      {
+        "stamp": 1298.7,
+        "xyz": [
+          2.016653546770867,
+          0.4622232847634054,
+          -0.07351501682034702
+        ]
+      },
+      {
+        "stamp": 1299.7,
+        "xyz": [
+          2.0173527812599055,
+          0.46187779429046816,
+          -0.07352498101806891
+        ]
+      },
+      {
+        "stamp": 1300.7,
+        "xyz": [
+          2.0172482533782516,
+          0.4625865481239897,
+          -0.07350989177502759
+        ]
+      },
+      {
+        "stamp": 1301.7,
+        "xyz": [
+          2.017918904536619,
+          0.46250898230702325,
+          -0.07349371089932141
+        ]
+      },
+      {
+        "stamp": 1302.7,
+        "xyz": [
+          2.017984651933613,
+          0.46230840374063553,
+          -0.07348994784622376
+        ]
+      },
+      {
+        "stamp": 1303.601,
+        "xyz": [
+          2.0180044541752857,
+          0.4623698034408754,
+          -0.07350949303697678
+        ]
+      },
+      {
+        "stamp": 1304.601,
+        "xyz": [
+          2.0189627739879845,
+          0.46213089159538845,
+          -0.07349344901126703
+        ]
+      },
+      {
+        "stamp": 1305.601,
+        "xyz": [
+          2.018134540583403,
+          0.4625139830042827,
+          -0.07350794275071983
+        ]
+      },
+      {
+        "stamp": 1306.601,
+        "xyz": [
+          2.019712199938387,
+          0.46255809615209337,
+          -0.0735072573809877
+        ]
+      },
+      {
+        "stamp": 1307.601,
+        "xyz": [
+          2.0177445029799506,
+          0.462241961087957,
+          -0.07353624970269258
+        ]
+      },
+      {
+        "stamp": 1308.601,
+        "xyz": [
+          2.018006615965819,
+          0.4624225454707514,
+          -0.0735263029554099
+        ]
+      },
+      {
+        "stamp": 1309.601,
+        "xyz": [
+          2.017707338938909,
+          0.46293097317906173,
+          -0.0734809831692962
+        ]
+      },
+      {
+        "stamp": 1310.601,
+        "xyz": [
+          2.0175725771190502,
+          0.4620987635175812,
+          -0.07351538353992727
+        ]
+      },
+      {
+        "stamp": 1311.6,
+        "xyz": [
+          2.017763914187739,
+          0.4620819081958279,
+          -0.07349479999916247
+        ]
+      },
+      {
+        "stamp": 1312.6,
+        "xyz": [
+          2.0189211115483277,
+          0.4625929343484985,
+          -0.07352506687423689
+        ]
+      }
+    ]
+  },
+  "tf_graph": "base_footprint: \n  parent: 'odom'\n  broadcaster: 'default_authority'\n  rate: 29.478\n  most_recent_transform: 1313.425000\n  oldest_transform: 1298.397000\n  buffer_length: 15.028\nodom: \n  parent: 'map'\n  broadcaster: 'default_authority'\n  rate: 14.932\n  most_recent_transform: 1313.401000\n  oldest_transform: 1298.400000\n  buffer_length: 15.001\nbase_link: \n  parent: 'base_footprint'\n  broadcaster: 'default_authority'\n  rate: 10000.000\n  most_recent_transform: 0.000000\n  oldest_transform: 0.000000\n  buffer_length: 0.000\ncamera_link: \n  parent: 'base_link'\n  broadcaster: 'default_authority'\n  rate: 10000.000\n  most_recent_transform: 0.000000\n  oldest_transform: 0.000000\n  buffer_length: 0.000\ncamera_rgb_frame: \n  parent: 'camera_link'\n  broadcaster: 'default_authority'\n  rate: 10000.000\n  most_recent_transform: 0.000000\n  oldest_transform: 0.000000\n  buffer_length: 0.000\ncamera_rgb_optical_frame: \n  parent: 'camera_rgb_frame'\n  broadcaster: 'default_authority'\n  rate: 10000.000\n  most_recent_transform: 0.000000\n  oldest_transform: 0.000000\n  buffer_length: 0.000\ncaster_back_left_link: \n  parent: 'base_link'\n  broadcaster: 'default_authority'\n  rate: 10000.000\n  most_recent_transform: 0.000000\n  oldest_transform: 0.000000\n  buffer_length: 0.000\ncaster_back_right_link: \n  parent: 'base_link'\n  broadcaster: 'default_authority'\n  rate: 10000.000\n  most_recent_transform: 0.000000\n  oldest_transform: 0.000000\n  buffer_length: 0.000\nimu_link: \n  parent: 'base_link'\n  broadcaster: 'default_authority'\n  rate: 10000.000\n  most_recent_transform: 0.000000\n  oldest_transform: 0.000000\n  buffer_length: 0.000\nbase_scan: \n  parent: 'base_link'\n  broadcaster: 'default_authority'\n  rate: 10000.000\n  most_recent_transform: 0.000000\n  oldest_transform: 0.000000\n  buffer_length: 0.000\nwheel_left_link: \n  parent: 'base_link'\n  broadcaster: 'default_authority'\n  rate: 19.497\n  most_recent_transform: 1313.391000\n  oldest_transform: 1298.363000\n  buffer_length: 15.028\nwheel_right_link: \n  parent: 'base_link'\n  broadcaster: 'default_authority'\n  rate: 19.497\n  most_recent_transform: 1313.391000\n  oldest_transform: 1298.363000\n  buffer_length: 15.028\n",
+  "publishers": {
+    "/clock": [
+      {
+        "node": "//gazebo",
+        "gid": [
+          1,
+          16,
+          65,
+          155,
+          37,
+          83,
+          184,
+          119,
+          20,
+          229,
+          137,
+          131,
+          0,
+          0,
+          21,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "qos": "QoSProfile(history=HistoryPolicy.KEEP_LAST, depth=1, reliability=ReliabilityPolicy.BEST_EFFORT, durability=DurabilityPolicy.VOLATILE, lifespan=Infinite, deadline=Infinite, liveliness=LivelinessPolicy.AUTOMATIC, liveliness_lease_duration=Infinite, avoid_ros_namespace_conventions=False)"
+      }
+    ],
+    "/tf": [
+      {
+        "node": "//robot_state_publisher",
+        "gid": [
+          1,
+          16,
+          24,
+          44,
+          113,
+          83,
+          254,
+          175,
+          105,
+          213,
+          51,
+          245,
+          0,
+          0,
+          22,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "qos": "QoSProfile(history=HistoryPolicy.KEEP_LAST, depth=100, reliability=ReliabilityPolicy.RELIABLE, durability=DurabilityPolicy.VOLATILE, lifespan=Infinite, deadline=Infinite, liveliness=LivelinessPolicy.AUTOMATIC, liveliness_lease_duration=Infinite, avoid_ros_namespace_conventions=False)"
+      },
+      {
+        "node": "//turtlebot3_diff_drive",
+        "gid": [
+          1,
+          16,
+          65,
+          155,
+          37,
+          83,
+          184,
+          119,
+          20,
+          229,
+          137,
+          131,
+          0,
+          0,
+          118,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "qos": "QoSProfile(history=HistoryPolicy.KEEP_LAST, depth=100, reliability=ReliabilityPolicy.RELIABLE, durability=DurabilityPolicy.VOLATILE, lifespan=Infinite, deadline=Infinite, liveliness=LivelinessPolicy.AUTOMATIC, liveliness_lease_duration=Infinite, avoid_ros_namespace_conventions=False)"
+      },
+      {
+        "node": "//cartographer_node",
+        "gid": [
+          1,
+          16,
+          242,
+          200,
+          241,
+          127,
+          199,
+          60,
+          84,
+          248,
+          43,
+          159,
+          0,
+          0,
+          29,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "qos": "QoSProfile(history=HistoryPolicy.KEEP_LAST, depth=100, reliability=ReliabilityPolicy.RELIABLE, durability=DurabilityPolicy.VOLATILE, lifespan=Infinite, deadline=Infinite, liveliness=LivelinessPolicy.AUTOMATIC, liveliness_lease_duration=Infinite, avoid_ros_namespace_conventions=False)"
+      }
+    ],
+    "/tf_static": [
+      {
+        "node": "//robot_state_publisher",
+        "gid": [
+          1,
+          16,
+          24,
+          44,
+          113,
+          83,
+          254,
+          175,
+          105,
+          213,
+          51,
+          245,
+          0,
+          0,
+          23,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "qos": "QoSProfile(history=HistoryPolicy.KEEP_LAST, depth=1, reliability=ReliabilityPolicy.RELIABLE, durability=DurabilityPolicy.TRANSIENT_LOCAL, lifespan=Infinite, deadline=Infinite, liveliness=LivelinessPolicy.AUTOMATIC, liveliness_lease_duration=Infinite, avoid_ros_namespace_conventions=False)"
+      }
+    ],
+    "/local_costmap/published_footprint": [
+      {
+        "node": "/local_costmap/local_costmap",
+        "gid": [
+          1,
+          16,
+          249,
+          131,
+          45,
+          207,
+          152,
+          48,
+          201,
+          230,
+          102,
+          57,
+          0,
+          0,
+          69,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "qos": "QoSProfile(history=HistoryPolicy.KEEP_LAST, depth=1, reliability=ReliabilityPolicy.RELIABLE, durability=DurabilityPolicy.VOLATILE, lifespan=Infinite, deadline=Infinite, liveliness=LivelinessPolicy.AUTOMATIC, liveliness_lease_duration=Infinite, avoid_ros_namespace_conventions=False)"
+      }
+    ]
+  },
+  "node_list": "/behavior_server\n/bt_navigator\n/bt_navigator_navigate_through_poses_rclcpp_node\n/bt_navigator_navigate_to_pose_rclcpp_node\n/camera_driver\n/cartographer_node\n/cartographer_occupancy_grid_node\n/controller_server\n/gazebo\n/global_costmap/global_costmap\n/house_state_collector\n/lifecycle_manager_navigation\n/local_costmap/local_costmap\n/planner_server\n/robot_state_publisher\n/rviz2\n/smoother_server\n/transform_listener_impl_5923a481a060\n/transform_listener_impl_5acdd7bcfbb0\n/transform_listener_impl_63643eebf9c0\n/transform_listener_impl_70f38c003d70\n/transform_listener_impl_78e3d801ad60\n/transform_listener_impl_7e9cd0005600\n/turtlebot3_diff_drive\n/turtlebot3_imu\n/turtlebot3_joint_state\n/turtlebot3_laserscan\n/velocity_smoother\n/waypoint_follower\n",
+  "parameters": {
+    "/local_costmap/local_costmap": "/local_costmap/local_costmap:\n  ros__parameters:\n    /bond_disable_heartbeat_timeout: true\n    always_send_full_costmap: true\n    filters: []\n    footprint: '[]'\n    footprint_padding: 0.009999999776482582\n    global_frame: odom\n    height: 3\n    inflation_layer:\n      cost_scaling_factor: 3.0\n      enabled: true\n      inflate_around_unknown: false\n      inflate_unknown: false\n      inflation_radius: 1.0\n      plugin: nav2_costmap_2d::InflationLayer\n    lethal_cost_threshold: 100\n    map_topic: /map\n    observation_sources: ''\n    obstacle_layer:\n      combination_method: 1\n      enabled: true\n      footprint_clearing_enabled: true\n      max_obstacle_height: 2.0\n      min_obstacle_height: 0.0\n      observation_sources: scan\n      plugin: nav2_costmap_2d::ObstacleLayer\n      scan:\n        clearing: true\n        data_type: LaserScan\n        expected_update_rate: 0.0\n        inf_is_valid: false\n        marking: true\n        max_obstacle_height: 2.0\n        min_obstacle_height: 0.0\n        observation_persistence: 0.0\n        obstacle_max_range: 2.5\n        obstacle_min_range: 0.0\n        raytrace_max_range: 3.0\n        raytrace_min_range: 0.0\n        sensor_frame: ''\n        topic: /scan\n    origin_x: 0.0\n    origin_y: 0.0\n    plugins:\n    - obstacle_layer\n    - voxel_layer\n    - inflation_layer\n    publish_frequency: 2.0\n    qos_overrides:\n      /clock:\n        subscription:\n          depth: 1\n          durability: volatile\n          history: keep_last\n          reliability: best_effort\n    resolution: 0.05\n    robot_base_frame: base_footprint\n    robot_radius: 0.28\n    rolling_window: true\n    track_unknown_space: false\n    transform_tolerance: 0.3\n    trinary_costmap: true\n    unknown_cost_value: 255\n    update_frequency: 5.0\n    use_maximum: false\n    use_sim_time: true\n    voxel_layer:\n      combination_method: 1\n      enabled: true\n      footprint_clearing_enabled: true\n      mark_threshold: 0\n      max_obstacle_height: 2.0\n      min_obstacle_height: 0.0\n      observation_sources: scan\n      origin_z: 0.0\n      plugin: nav2_costmap_2d::VoxelLayer\n      publish_voxel_map: true\n      scan:\n        clearing: true\n        data_type: LaserScan\n        expected_update_rate: 0.0\n        inf_is_valid: false\n        marking: true\n        max_obstacle_height: 2.0\n        min_obstacle_height: 0.0\n        observation_persistence: 0.0\n        obstacle_max_range: 2.5\n        obstacle_min_range: 0.0\n        raytrace_max_range: 3.0\n        raytrace_min_range: 0.0\n        sensor_frame: ''\n        topic: /scan\n      unknown_threshold: 15\n      z_resolution: 0.05\n      z_voxels: 16\n    width: 3\n\n",
+    "/global_costmap/global_costmap": "/global_costmap/global_costmap:\n  ros__parameters:\n    /bond_disable_heartbeat_timeout: true\n    always_send_full_costmap: true\n    filters: []\n    footprint: '[]'\n    footprint_padding: 0.009999999776482582\n    global_frame: map\n    height: 5\n    inflation_layer:\n      cost_scaling_factor: 3.0\n      enabled: true\n      inflate_around_unknown: false\n      inflate_unknown: false\n      inflation_radius: 0.55\n      plugin: nav2_costmap_2d::InflationLayer\n    lethal_cost_threshold: 65\n    map_topic: /map\n    observation_sources: ''\n    obstacle_layer:\n      combination_method: 1\n      enabled: true\n      footprint_clearing_enabled: true\n      max_obstacle_height: 2.0\n      min_obstacle_height: 0.0\n      observation_sources: scan\n      plugin: nav2_costmap_2d::ObstacleLayer\n      scan:\n        clearing: true\n        data_type: LaserScan\n        expected_update_rate: 0.0\n        inf_is_valid: false\n        marking: true\n        max_obstacle_height: 2.0\n        min_obstacle_height: 0.0\n        observation_persistence: 0.0\n        obstacle_max_range: 2.5\n        obstacle_min_range: 0.0\n        raytrace_max_range: 3.0\n        raytrace_min_range: 0.0\n        sensor_frame: ''\n        topic: /scan\n    origin_x: 0.0\n    origin_y: 0.0\n    plugins:\n    - static_layer\n    - obstacle_layer\n    - voxel_layer\n    - inflation_layer\n    publish_frequency: 1.0\n    qos_overrides:\n      /clock:\n        subscription:\n          depth: 1\n          durability: volatile\n          history: keep_last\n          reliability: best_effort\n    resolution: 0.05\n    robot_base_frame: base_footprint\n    robot_radius: 0.28\n    rolling_window: false\n    static_layer:\n      enabled: true\n      footprint_clearing_enabled: false\n      map_subscribe_transient_local: true\n      map_topic: ''\n      plugin: nav2_costmap_2d::StaticLayer\n      subscribe_to_updates: false\n      transform_tolerance: 0.0\n    track_unknown_space: true\n    transform_tolerance: 0.3\n    trinary_costmap: true\n    unknown_cost_value: 255\n    update_frequency: 1.0\n    use_maximum: false\n    use_sim_time: true\n    voxel_layer:\n      combination_method: 1\n      enabled: true\n      footprint_clearing_enabled: true\n      mark_threshold: 0\n      max_obstacle_height: 2.0\n      min_obstacle_height: 0.0\n      observation_sources: scan\n      origin_z: 0.0\n      plugin: nav2_costmap_2d::VoxelLayer\n      publish_voxel_map: true\n      scan:\n        clearing: true\n        data_type: LaserScan\n        expected_update_rate: 0.0\n        inf_is_valid: false\n        marking: true\n        max_obstacle_height: 2.0\n        min_obstacle_height: 0.0\n        observation_persistence: 0.0\n        obstacle_max_range: 2.5\n        obstacle_min_range: 0.0\n        raytrace_max_range: 3.0\n        raytrace_min_range: 0.0\n        sensor_frame: ''\n        topic: /scan\n      unknown_threshold: 15\n      z_resolution: 0.05\n      z_voxels: 16\n    width: 5\n\n",
+    "/controller_server": "/controller_server:\n  ros__parameters:\n    /bond_disable_heartbeat_timeout: true\n    FollowPath:\n      BaseObstacle:\n        class: BaseObstacle\n        scale: 0.02\n        sum_scores: false\n      GoalAlign:\n        aggregation_type: last\n        class: GoalAlign\n        forward_point_distance: 0.1\n        scale: 24.0\n      GoalDist:\n        aggregation_type: last\n        class: GoalDist\n        scale: 24.0\n      Oscillation:\n        class: Oscillation\n        oscillation_reset_angle: 0.2\n        oscillation_reset_dist: 0.05\n        oscillation_reset_time: -1.0\n        scale: 1.0\n        x_only_threshold: 0.05\n      PathAlign:\n        aggregation_type: last\n        class: PathAlign\n        forward_point_distance: 0.1\n        scale: 32.0\n      PathDist:\n        aggregation_type: last\n        class: PathDist\n        scale: 32.0\n      RotateToGoal:\n        class: RotateToGoal\n        lookahead_time: -1.0\n        scale: 32.0\n        slowing_factor: 5.0\n      acc_lim_theta: 3.2\n      acc_lim_x: 2.5\n      acc_lim_y: 0.0\n      angular_granularity: 0.025\n      critics:\n      - RotateToGoal\n      - Oscillation\n      - BaseObstacle\n      - GoalAlign\n      - PathAlign\n      - PathDist\n      - GoalDist\n      debug_trajectory_details: true\n      decel_lim_theta: -3.2\n      decel_lim_x: -2.5\n      decel_lim_y: 0.0\n      default_critic_namespaces: []\n      discretize_by_time: false\n      forward_prune_distance: 2.0\n      include_last_point: true\n      limit_vel_cmd_in_traj: false\n      linear_granularity: 0.05\n      marker_lifetime: 0.1\n      max_speed_xy: 0.1\n      max_vel_theta: 1.0\n      max_vel_x: 0.1\n      max_vel_y: 0.0\n      min_speed_theta: 0.0\n      min_speed_xy: 0.0\n      min_vel_x: 0.0\n      min_vel_y: 0.0\n      plugin: dwb_core::DWBLocalPlanner\n      prune_distance: 2.0\n      prune_plan: true\n      publish_cost_grid_pc: false\n      publish_evaluation: true\n      publish_global_plan: true\n      publish_local_plan: true\n      publish_trajectories: true\n      publish_transformed_plan: true\n      short_circuit_trajectory_evaluation: true\n      shorten_transformed_plan: true\n      sim_time: 2.0\n      time_granularity: 0.5\n      trajectory_generator_name: dwb_plugins::StandardTrajectoryGenerator\n      trans_stopped_velocity: 0.05\n      transform_tolerance: 0.2\n      vtheta_samples: 40\n      vx_samples: 20\n      vy_samples: 0\n      xy_goal_tolerance: 0.05\n    controller_frequency: 10.0\n    controller_plugins:\n    - FollowPath\n    failure_tolerance: 0.3\n    general_goal_checker:\n      plugin: nav2_controller::SimpleGoalChecker\n      stateful: true\n      xy_goal_tolerance: 0.25\n      yaw_goal_tolerance: 0.25\n    goal_checker_plugins:\n    - general_goal_checker\n    min_theta_velocity_threshold: 0.001\n    min_x_velocity_threshold: 0.001\n    min_y_velocity_threshold: 0.5\n    odom_topic: odom\n    progress_checker:\n      movement_time_allowance: 10.0\n      plugin: nav2_controller::SimpleProgressChecker\n      required_movement_radius: 0.5\n    progress_checker_plugin: progress_checker\n    publish_zero_velocity: true\n    qos_overrides:\n      /clock:\n        subscription:\n          depth: 1\n          durability: volatile\n          history: keep_last\n          reliability: best_effort\n    speed_limit_topic: speed_limit\n    use_sim_time: true\n\n",
+    "/behavior_server": "/behavior_server:\n  ros__parameters:\n    /bond_disable_heartbeat_timeout: true\n    backup:\n      acceleration_limit: 0.0\n      deceleration_limit: 0.0\n      minimum_speed: 0.0\n      plugin: nav2_behaviors/BackUp\n    behavior_plugins:\n    - spin\n    - backup\n    - drive_on_heading\n    - wait\n    costmap_topic: local_costmap/costmap_raw\n    cycle_frequency: 10.0\n    drive_on_heading:\n      acceleration_limit: 0.0\n      deceleration_limit: 0.0\n      minimum_speed: 0.0\n      plugin: nav2_behaviors/DriveOnHeading\n    footprint_topic: local_costmap/published_footprint\n    global_frame: odom\n    max_rotational_vel: 1.0\n    min_rotational_vel: 0.4\n    qos_overrides:\n      /clock:\n        subscription:\n          depth: 1\n          durability: volatile\n          history: keep_last\n          reliability: best_effort\n    robot_base_frame: base_footprint\n    rotational_acc_lim: 3.2\n    simulate_ahead_time: 2.0\n    spin:\n      plugin: nav2_behaviors/Spin\n    transform_tolerance: 0.1\n    use_sim_time: true\n    wait:\n      plugin: nav2_behaviors/Wait\n\n",
+    "/cartographer_node": "/cartographer_node:\n  ros__parameters:\n    qos_overrides:\n      /clock:\n        subscription:\n          depth: 1\n          durability: volatile\n          history: keep_last\n          reliability: best_effort\n      /parameter_events:\n        publisher:\n          depth: 1000\n          durability: volatile\n          history: keep_last\n          reliability: reliable\n      /tf:\n        publisher:\n          depth: 100\n          durability: volatile\n          history: keep_last\n          reliability: reliable\n    use_sim_time: true\n\n"
+  },
+  "packages": "ros-humble-cyclonedds 0.10.5-2jammy.20260226.013234\nros-humble-fastrtps 2.6.12-1jammy.20260723.233918\nros-humble-fastrtps-cmake-module 2.2.4-1jammy.20260304.202011\nros-humble-nav2-amcl 1.1.20-1jammy.20260908.000809\nros-humble-nav2-behavior-tree 1.1.20-1jammy.20260908.004120\nros-humble-nav2-behaviors 1.1.20-1jammy.20260908.011930\nros-humble-nav2-bringup 1.1.20-1jammy.20260908.021125\nros-humble-nav2-bt-navigator 1.1.20-1jammy.20260908.011944\nros-humble-nav2-collision-monitor 1.1.20-1jammy.20260908.010715\nros-humble-nav2-common 1.1.20-1jammy.20260907.215155\nros-humble-nav2-constrained-smoother 1.1.20-1jammy.20260908.005501\nros-humble-nav2-controller 1.1.20-1jammy.20260908.005456\nros-humble-nav2-core 1.1.20-1jammy.20260908.004903\nros-humble-nav2-costmap-2d 1.1.20-1jammy.20260908.002855\nros-humble-nav2-dwb-controller 1.1.20-1jammy.20260908.012626\nros-humble-nav2-lifecycle-manager 1.1.20-1jammy.20260908.000824\nros-humble-nav2-map-server 1.1.20-1jammy.20260908.000810\nros-humble-nav2-mppi-controller 1.1.20-1jammy.20260908.012051\nros-humble-nav2-msgs 1.1.20-1jammy.20260907.223327\nros-humble-nav2-navfn-planner 1.1.20-1jammy.20260908.005505\nros-humble-nav2-planner 1.1.20-1jammy.20260908.005526\nros-humble-nav2-regulated-pure-pursuit-controller 1.1.20-1jammy.20260908.005527\nros-humble-nav2-rotation-shim-controller 1.1.20-1jammy.20260908.010304\nros-humble-nav2-route 1.1.20-1jammy.20260908.005219\nros-humble-nav2-rviz-plugins 1.1.20-1jammy.20260908.014610\nros-humble-nav2-simple-commander 1.1.20-1jammy.20260907.224519\nros-humble-nav2-smac-planner 1.1.20-1jammy.20260908.005553\nros-humble-nav2-smoother 1.1.20-1jammy.20260908.005556\nros-humble-nav2-theta-star-planner 1.1.20-1jammy.20260908.005548\nros-humble-nav2-util 1.1.20-1jammy.20260907.235813\nros-humble-nav2-velocity-smoother 1.1.20-1jammy.20260908.000910\nros-humble-nav2-voxel-grid 1.1.20-1jammy.20260908.002526\nros-humble-nav2-waypoint-follower 1.1.20-1jammy.20260908.005557\nros-humble-rclcpp 16.0.21-1jammy.20260907.213403\nros-humble-rclcpp-action 16.0.21-1jammy.20260907.223015\nros-humble-rclcpp-components 16.0.21-1jammy.20260907.223024\nros-humble-rclcpp-lifecycle 16.0.21-1jammy.20260907.223044\nros-humble-rmw 6.1.4-1jammy.20260907.194822\nros-humble-rmw-connextdds \nros-humble-rmw-cyclonedds-cpp 1.3.5-1jammy.20260907.205235\nros-humble-rmw-dds-common 1.6.0-2jammy.20260907.204727\nros-humble-rmw-fastrtps-cpp 6.2.10-1jammy.20260907.210327\nros-humble-rmw-fastrtps-shared-cpp 6.2.10-1jammy.20260907.205244\nros-humble-rmw-implementation 2.8.5-1jammy.20260907.211224\nros-humble-rmw-implementation-cmake 6.1.4-1jammy.20260907.191123\nros-humble-tf2 0.25.23-1jammy.20260907.213559\nros-humble-tf2-bullet 0.25.23-1jammy.20260907.225805\nros-humble-tf2-eigen 0.25.23-1jammy.20260908.011649\nros-humble-tf2-eigen-kdl 0.25.23-1jammy.20260907.220723\nros-humble-tf2-geometry-msgs 0.25.23-1jammy.20260907.225741\nros-humble-tf2-kdl 0.25.23-1jammy.20260907.225815\nros-humble-tf2-msgs 0.25.23-1jammy.20260907.215317\nros-humble-tf2-py 0.25.23-1jammy.20260907.214657\nros-humble-tf2-ros 0.25.23-1jammy.20260907.224752\nros-humble-tf2-ros-py 0.25.23-1jammy.20260907.215705\nros-humble-tf2-sensor-msgs 0.25.23-1jammy.20260907.225802\nros-humble-tf2-tools 0.25.23-1jammy.20260907.220000\n",
+  "processes": "    PID    PPID %CPU %MEM COMMAND\n  14098   14097 62.3  3.1 gzserver\n  14100   14097 24.8  2.4 gzclient\n  14263   14258 13.1  1.0 rviz2\n  15223   13852  7.9  0.3 python3\n   1294    1168  7.4  1.7 gnome-shell\n   1821    1294  7.1  0.5 Xwayland\n  15235    1168  7.1  0.3 python3\n  14429   14413  6.1  0.1 lifecycle_manag\n  14259   14258  5.2  0.2 cartographer_no\n  14423   14413  4.2  0.2 bt_navigator\n  14419   14413  4.0  0.1 planner_server\n  14415   14413  3.9  0.1 controller_serv\n  14421   14413  3.8  0.1 behavior_server\n  14417   14413  3.4  0.1 smoother_server\n  14427   14413  3.1  0.1 velocity_smooth\n  14425   14413  2.9  0.1 waypoint_follow\n  14102   14097  1.6  0.1 robot_state_pub\n   1187    1168  1.2  0.1 pulseaudio\n  14261   14258  1.0  0.1 cartographer_oc\n    444       2  0.7  0.0 irq/16-vmwgfx\n  13807    1294  0.5  0.5 terminator\n  14963       2  0.3  0.0 kworker/u16:0-events_power_efficient\n  15152    1294  0.3  0.3 gjs\n     17       2  0.1  0.0 rcu_preempt\n    752       1  0.1  0.0 vmtoolsd\n   1704    1168  0.1  0.2 vmtoolsd\n  12028       2  0.1  0.0 kworker/u16:2-events_unbound\n  14019       2  0.1  0.0 kworker/u16:1-events_unbound\n      1       0  0.0  0.0 systemd\n      2       0  0.0  0.0 kthreadd\n      3       2  0.0  0.0 pool_workqueue_release\n      4       2  0.0  0.0 kworker/R-rcu_g\n      5       2  0.0  0.0 kworker/R-rcu_p\n      6       2  0.0  0.0 kworker/R-slub_\n      7       2  0.0  0.0 kworker/R-netns\n      8       2  0.0  0.0 kworker/0:0-events\n      9       2  0.0  0.0 kworker/0:0H-events_highpri\n     12       2  0.0  0.0 kworker/R-mm_pe\n     13       2  0.0  0.0 rcu_tasks_kthread\n     14       2  0.0  0.0 rcu_tasks_rude_kthread\n     15       2  0.0  0.0 rcu_tasks_trace_kthread\n     16       2  0.0  0.0 ksoftirqd/0\n     18       2  0.0  0.0 migration/0\n     19       2  0.0  0.0 idle_inject/0\n     20       2  0.0  0.0 cpuhp/0\n     21       2  0.0  0.0 cpuhp/1\n     22       2  0.0  0.0 idle_inject/1\n     23       2  0.0  0.0 migration/1\n     24       2  0.0  0.0 ksoftirqd/1\n     26       2  0.0  0.0 kworker/1:0H-events_highpri\n     27       2  0.0  0.0 cpuhp/2\n     28       2  0.0  0.0 idle_inject/2\n     29       2  0.0  0.0 migration/2\n     30       2  0.0  0.0 ksoftirqd/2\n     32       2  0.0  0.0 kworker/2:0H-events_highpri\n     33       2  0.0  0.0 cpuhp/3\n     34       2  0.0  0.0 idle_inject/3\n     35       2  0.0  0.0 migration/3\n     36       2  0.0  0.0 ksoftirqd/3\n     38       2  0.0  0.0 kworker/3:0H-events_highpri\n     39       2  0.0  0.0 cpuhp/4\n     40       2  0.0  0.0 idle_inject/4\n     41       2  0.0  0.0 migration/4\n     42       2  0.0  0.0 ksoftirqd/4\n     44       2  0.0  0.0 kworker/4:0H-kblockd\n     45       2  0.0  0.0 cpuhp/5\n     46       2  0.0  0.0 idle_inject/5\n     47       2  0.0  0.0 migration/5\n     48       2  0.0  0.0 ksoftirqd/5\n     50       2  0.0  0.0 kworker/5:0H-events_highpri\n     51       2  0.0  0.0 cpuhp/6\n     52       2  0.0  0.0 idle_inject/6\n     53       2  0.0  0.0 migration/6\n     54       2  0.0  0.0 ksoftirqd/6\n     56       2  0.0  0.0 kworker/6:0H-events_highpri\n     57       2  0.0  0.0 cpuhp/7\n     58       2  0.0  0.0 idle_inject/7\n     59       2  0.0  0.0 migration/7\n     60       2  0.0  0.0 ksoftirqd/7\n     61       2  0.0  0.0 kworker/7:0-mm_percpu_wq\n     62       2  0.0  0.0 kworker/7:0H-events_highpri\n     63       2  0.0  0.0 kdevtmpfs\n     64       2  0.0  0.0 kworker/R-inet_\n     65       2  0.0  0.0 kauditd\n     66       2  0.0  0.0 khungtaskd\n     67       2  0.0  0.0 oom_reaper\n     69       2  0.0  0.0 kworker/R-write\n     71       2  0.0  0.0 kcompactd0\n     72       2  0.0  0.0 ksmd\n     73       2  0.0  0.0 khugepaged\n     74       2  0.0  0.0 kworker/R-kinte\n     75       2  0.0  0.0 kworker/R-kbloc\n     76       2  0.0  0.0 kworker/R-blkcg\n     77       2  0.0  0.0 irq/9-acpi\n     78       2  0.0  0.0 kworker/2:1-events\n     81       2  0.0  0.0 kworker/R-tpm_d\n     82       2  0.0  0.0 kworker/R-ata_s\n     83       2  0.0  0.0 kworker/R-md\n     84       2  0.0  0.0 kworker/R-md_bi\n     85       2  0.0  0.0 kworker/R-edac-\n     86       2  0.0  0.0 kworker/R-devfr\n     87       2  0.0  0.0 watchdogd\n     88       2  0.0  0.0 kworker/R-quota\n     89       2  0.0  0.0 kworker/0:1H-kblockd\n     90       2  0.0  0.0 kswapd0\n     91       2  0.0  0.0 ecryptfs-kthread\n     92       2  0.0  0.0 kworker/R-kthro\n     93       2  0.0  0.0 irq/24-pciehp\n     94       2  0.0  0.0 irq/25-pciehp\n     95       2  0.0  0.0 irq/26-pciehp\n     96       2  0.0  0.0 irq/27-pciehp\n     97       2  0.0  0.0 irq/28-pciehp\n     98       2  0.0  0.0 irq/29-pciehp\n     99       2  0.0  0.0 irq/30-pciehp\n    100       2  0.0  0.0 irq/31-pciehp\n    101       2  0.0  0.0 irq/32-pciehp\n    102       2  0.0  0.0 irq/33-pciehp\n    103       2  0.0  0.0 irq/34-pciehp\n    104       2  0.0  0.0 irq/35-pciehp\n    105       2  0.0  0.0 irq/36-pciehp\n    106       2  0.0  0.0 irq/37-pciehp\n    107       2  0.0  0.0 irq/38-pciehp\n    108       2  0.0  0.0 irq/39-pciehp\n    109       2  0.0  0.0 irq/40-pciehp\n    110       2  0.0  0.0 irq/41-pciehp\n    111       2  0.0  0.0 irq/42-pciehp\n    112       2  0.0  0.0 irq/43-pciehp\n    113       2  0.0  0.0 irq/44-pciehp\n    114       2  0.0  0.0 irq/45-pciehp\n    115       2  0.0  0.0 irq/46-pciehp\n    116       2  0.0  0.0 irq/47-pciehp\n    117       2  0.0  0.0 irq/48-pciehp\n    118       2  0.0  0.0 irq/49-pciehp\n    119       2  0.0  0.0 irq/50-pciehp\n    120       2  0.0  0.0 irq/51-pciehp\n    121       2  0.0  0.0 irq/52-pciehp\n    122       2  0.0  0.0 irq/53-pciehp\n    123       2  0.0  0.0 irq/54-pciehp\n    124       2  0.0  0.0 irq/55-pciehp\n    125       2  0.0  0.0 kworker/R-acpi_\n    127       2  0.0  0.0 scsi_eh_0\n    128       2  0.0  0.0 kworker/R-scsi_\n    129       2  0.0  0.0 scsi_eh_1\n    130       2  0.0  0.0 kworker/R-scsi_\n    134       2  0.0  0.0 kworker/R-mld\n    135       2  0.0  0.0 kworker/5:1H-kblockd\n    136       2  0.0  0.0 kworker/R-ipv6_\n    145       2  0.0  0.0 kworker/R-kstrp\n    161       2  0.0  0.0 kworker/R-charg\n    181       2  0.0  0.0 kworker/1:1H-kblockd\n    184       2  0.0  0.0 kworker/2:1H-kblockd\n    185       2  0.0  0.0 kworker/3:1H-kblockd\n    202       2  0.0  0.0 kworker/6:1H-kblockd\n    221       2  0.0  0.0 kworker/7:1H-kblockd\n    235       2  0.0  0.0 kworker/6:2-events\n    236       2  0.0  0.0 kworker/R-mpt_p\n    237       2  0.0  0.0 kworker/R-mpt/0\n    247       2  0.0  0.0 scsi_eh_2\n    248       2  0.0  0.0 kworker/R-scsi_\n    249       2  0.0  0.0 scsi_eh_3\n    250       2  0.0  0.0 kworker/R-scsi_\n    251       2  0.0  0.0 scsi_eh_4\n    252       2  0.0  0.0 kworker/R-scsi_\n    253       2  0.0  0.0 scsi_eh_5\n    254       2  0.0  0.0 kworker/R-scsi_\n    255       2  0.0  0.0 scsi_eh_6\n    256       2  0.0  0.0 kworker/R-scsi_\n    257       2  0.0  0.0 scsi_eh_7\n    258       2  0.0  0.0 kworker/R-scsi_\n    259       2  0.0  0.0 scsi_eh_8\n    260       2  0.0  0.0 kworker/R-scsi_\n    261       2  0.0  0.0 scsi_eh_9\n    262       2  0.0  0.0 kworker/R-scsi_\n    263       2  0.0  0.0 scsi_eh_10\n    264       2  0.0  0.0 kworker/R-scsi_\n    265       2  0.0  0.0 scsi_eh_11\n    266       2  0.0  0.0 kworker/R-scsi_\n    267       2  0.0  0.0 scsi_eh_12\n    268       2  0.0  0.0 kworker/R-scsi_\n    269       2  0.0  0.0 scsi_eh_13\n    270       2  0.0  0.0 kworker/R-scsi_\n    271       2  0.0  0.0 scsi_eh_14\n    272       2  0.0  0.0 kworker/R-scsi_\n    273       2  0.0  0.0 scsi_eh_15\n    274       2  0.0  0.0 kworker/R-scsi_\n    275       2  0.0  0.0 scsi_eh_16\n    276       2  0.0  0.0 kworker/R-scsi_\n    277       2  0.0  0.0 scsi_eh_17\n    278       2  0.0  0.0 kworker/R-scsi_\n    279       2  0.0  0.0 scsi_eh_18\n    280       2  0.0  0.0 kworker/R-scsi_\n    281       2  0.0  0.0 scsi_eh_19\n    282       2  0.0  0.0 kworker/R-scsi_\n    283       2  0.0  0.0 scsi_eh_20\n    284       2  0.0  0.0 kworker/R-scsi_\n    285       2  0.0  0.0 scsi_eh_21\n    286       2  0.0  0.0 kworker/R-scsi_\n    287       2  0.0  0.0 scsi_eh_22\n    288       2  0.0  0.0 kworker/R-scsi_\n    289       2  0.0  0.0 scsi_eh_23\n    290       2  0.0  0.0 kworker/R-scsi_\n    291       2  0.0  0.0 scsi_eh_24\n    292       2  0.0  0.0 kworker/R-scsi_\n    293       2  0.0  0.0 scsi_eh_25\n    294       2  0.0  0.0 kworker/R-scsi_\n    295       2  0.0  0.0 scsi_eh_26\n    296       2  0.0  0.0 kworker/R-scsi_\n    297       2  0.0  0.0 kworker/4:2-mm_percpu_wq\n    298       2  0.0  0.0 scsi_eh_27\n    299       2  0.0  0.0 kworker/R-scsi_\n    300       2  0.0  0.0 scsi_eh_28\n    301       2  0.0  0.0 kworker/R-scsi_\n    302       2  0.0  0.0 scsi_eh_29\n    303       2  0.0  0.0 kworker/R-scsi_\n    304       2  0.0  0.0 scsi_eh_30\n    305       2  0.0  0.0 kworker/R-scsi_\n    306       2  0.0  0.0 scsi_eh_31\n    307       2  0.0  0.0 kworker/R-scsi_\n    308       2  0.0  0.0 scsi_eh_32\n    309       2  0.0  0.0 kworker/R-scsi_\n    339       2  0.0  0.0 kworker/5:2-events\n    361       2  0.0  0.0 jbd2/sda2-8\n    362       2  0.0  0.0 kworker/R-ext4-\n    374       2  0.0  0.0 kworker/1:2-events\n    402       1  0.0  0.2 systemd-journal\n    430       1  0.0  0.0 vmware-vmblock-\n    445       2  0.0  0.0 kworker/R-ttm\n    453       1  0.0  0.0 systemd-udevd\n    540       2  0.0  0.0 irq/69-vmw_vmci\n    541       2  0.0  0.0 irq/70-vmw_vmci\n    543       2  0.0  0.0 irq/71-vmw_vmci\n    580       2  0.0  0.0 kworker/R-crypt\n    722       1  0.0  0.0 systemd-oomd\n    730       1  0.0  0.0 systemd-resolve\n    732       1  0.0  0.0 systemd-timesyn\n    746       1  0.0  0.0 VGAuthService\n    881       2  0.0  0.0 kworker/3:7-events\n    894       1  0.0  0.0 accounts-daemon\n    895       1  0.0  0.0 acpid\n    900       1  0.0  0.0 avahi-daemon\n    902       1  0.0  0.0 cron\n    903       1  0.0  0.0 dbus-daemon\n    904       1  0.0  0.1 NetworkManager\n    911       1  0.0  0.0 irqbalance\n    913       1  0.0  0.1 networkd-dispat\n    915       1  0.0  0.0 polkitd\n    916       1  0.0  0.0 power-profiles-\n    920       1  0.0  0.0 rsyslogd\n    925       1  0.0  0.2 snapd\n    927       1  0.0  0.0 switcheroo-cont\n    931       1  0.0  0.0 systemd-logind\n    938       1  0.0  0.0 udisksd\n    942       1  0.0  0.0 wpa_supplicant\n    951     900  0.0  0.0 avahi-daemon\n    999       1  0.0  0.0 ModemManager\n   1026       1  0.0  0.1 unattended-upgr\n   1044       1  0.0  0.0 cupsd\n   1051       1  0.0  0.0 gdm3\n   1073    1051  0.0  0.0 gdm-session-wor\n   1119       1  0.0  0.0 cups-browsed\n   1124       1  0.0  0.0 kerneloops\n   1130       1  0.0  0.0 kerneloops\n   1168       1  0.0  0.0 systemd\n   1169    1168  0.0  0.0 (sd-pam)\n   1185    1168  0.0  0.0 pipewire\n   1186    1168  0.0  0.0 pipewire-media-\n   1188    1168  0.0  0.0 user-session-he\n   1197       1  0.0  0.0 rtkit-daemon\n   1199       1  0.0  0.0 gnome-keyring-d\n   1206    1073  0.0  0.0 gdm-wayland-ses\n   1208    1168  0.0  0.0 dbus-daemon\n   1218    1206  0.0  0.0 gnome-session-b\n   1252    1168  0.0  0.0 gnome-session-c\n   1262    1168  0.0  0.0 gvfsd\n   1270    1168  0.0  0.0 gvfsd-fuse\n   1271    1168  0.0  0.1 gnome-session-b\n   1291    1271  0.0  0.0 at-spi-bus-laun\n   1302    1291  0.0  0.0 dbus-daemon\n   1360    1168  0.0  0.0 xdg-document-po\n   1370    1168  0.0  0.0 xdg-permission-\n   1376    1360  0.0  0.0 fusermount3\n   1457    1168  0.0  0.1 gnome-shell-cal\n   1459       1  0.0  0.0 upowerd\n   1467    1168  0.0  0.2 evolution-sourc\n   1478    1168  0.0  0.0 gvfs-udisks2-vo\n   1483    1168  0.0  0.2 goa-daemon\n   1489    1168  0.0  0.0 gvfs-goa-volume\n   1491    1168  0.0  0.0 dconf-service\n   1498    1168  0.0  0.1 evolution-calen\n   1509    1168  0.0  0.1 evolution-addre\n   1516    1168  0.0  0.0 goa-identity-se\n   1519    1168  0.0  0.0 gvfs-mtp-volume\n   1531    1168  0.0  0.0 gvfs-afc-volume\n   1538    1168  0.0  0.0 gvfs-gphoto2-vo\n   1553       1  0.0  0.2 packagekitd\n   1566    1262  0.0  0.0 gvfsd-trash\n   1573    1168  0.0  0.1 gjs\n   1575    1168  0.0  0.0 at-spi2-registr\n   1586    1168  0.0  0.0 sh\n   1596    1168  0.0  0.0 gsd-a11y-settin\n   1598    1586  0.0  0.0 ibus-daemon\n   1600    1168  0.0  0.1 gsd-color\n   1602    1168  0.0  0.1 gsd-datetime\n   1604    1168  0.0  0.0 gsd-housekeepin\n   1614    1168  0.0  0.1 gsd-keyboard\n   1622    1168  0.0  0.1 gsd-media-keys\n   1624    1168  0.0  0.1 gsd-power\n   1626    1168  0.0  0.0 gsd-print-notif\n   1627    1168  0.0  0.0 gsd-rfkill\n   1628    1168  0.0  0.0 gsd-screensaver\n   1629    1168  0.0  0.0 gsd-sharing\n   1630    1168  0.0  0.0 gsd-smartcard\n   1639    1168  0.0  0.0 gsd-sound\n   1647    1168  0.0  0.1 gsd-wacom\n   1667    1598  0.0  0.0 ibus-dconf\n   1673    1598  0.0  0.1 ibus-extension-\n   1680    1271  0.0  0.0 gsd-disk-utilit\n   1692    1168  0.0  0.0 ibus-portal\n   1715    1271  0.0  0.4 evolution-alarm\n   1748    1168  0.0  0.0 gsd-printer\n   1755    1168  0.0  0.0 gvfsd-metadata\n   1794    1168  0.0  1.3 snap-store\n   1845    1598  0.0  0.0 ibus-engine-han\n   1887       1  0.0  0.0 colord\n   1908    1168  0.0  0.0 xdg-desktop-por\n   1909    1168  0.0  0.1 tracker-miner-f\n   1913    1168  0.0  0.1 xdg-desktop-por\n   1933    1168  0.0  0.1 gjs\n   1982    1168  0.0  0.4 gsd-xsettings\n   1990    1168  0.0  0.1 xdg-desktop-por\n   2022    1188  0.0  0.2 snapd-desktop-i\n   2041    1168  0.0  0.1 ibus-x11\n   2149       1  0.0  0.2 fwupd\n   3052    1271  0.0  0.1 update-notifier\n   3906    1168  0.0  0.4 nautilus\n  11895    1598  0.0  0.0 ibus-engine-sim\n  11983       2  0.0  0.0 kworker/5:1\n  12882       2  0.0  0.0 kworker/2:0-cgroup_free\n  13709       2  0.0  0.0 kworker/4:1\n  13713       2  0.0  0.0 kworker/1:1\n  13787       2  0.0  0.0 kworker/4:1H\n  13794       2  0.0  0.0 kworker/3:0\n  13797       2  0.0  0.0 kworker/7:1-cgroup_free\n  13829   13807  0.0  0.0 bash\n  13852   13807  0.0  0.0 bash\n  13873   13807  0.0  0.0 bash\n  13894   13807  0.0  0.0 bash\n  13915   13807  0.0  0.0 bash\n  13936   13807  0.0  0.0 bash\n  14097   13829  0.0  0.2 ros2\n  14258   13915  0.0  0.2 ros2\n  14413   13873  0.0  0.2 ros2\n  14916       2  0.0  0.0 kworker/u17:8-ttm\n  14998       2  0.0  0.0 kworker/u17:18-ttm\n  15083       2  0.0  0.0 kworker/6:0\n  15084       2  0.0  0.0 kworker/0:2\n  15121       2  0.0  0.0 kworker/u17:0-ttm\n  15122       2  0.0  0.0 kworker/u17:1-ttm\n  15123       2  0.0  0.0 kworker/u17:2-ttm\n  15174       2  0.0  0.0 kworker/u17:3-ttm\n  15175       2  0.0  0.0 kworker/u17:4-ttm\n  15176       2  0.0  0.0 kworker/u17:5-ttm\n  15177       2  0.0  0.0 kworker/u17:6-ttm\n  15178       2  0.0  0.0 kworker/u17:7\n  15202       2  0.0  0.0 kworker/7:2\n  15312   15223  0.0  0.0 ps\n"
+}
